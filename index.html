@@ -1,51 +1,110 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Beatriz Rodrigues | Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-color: #38bdf8;
+    --accent-hover: #0ea5e9;
+}
 
-    <div class="container">
-        <header>
-            <h1>Ana Beatriz Rodrigues</h1>
-            <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
-        </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-        <section id="sobre">
-            <h2>Sobre mim</h2>
-            <p>Estudante de Análise e Desenvolvimento de Sistemas, desenvolvendo projetos acadêmicos e pessoais e aprimorando conhecimentos em tecnologia.</p>
-        </section>
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
 
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <ul>
-                <li><a href="https://github.com/anabeatrizrod/urbanwatch" target="_blank">UrbanWatch</a></li>
-                <li><a href="https://github.com/anabeatrizrod/shopsmart" target="_blank">ShopSmart</a></li>
-                <li><a href="https://github.com/anabeatrizrod/save-serve" target="_blank">Save&Serve</a></li>
-                <li><a href="https://github.com/anabeatrizrod/szpc-gta-6" target="_blank">GTA VI</a></li>
-            </ul>
-        </section>
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-        <section id="tecnologias">
-            <h2>Tecnologias</h2>
-            <p>HTML · CSS · JavaScript · C# · .NET · SQL · React Native</p>
-        </section>
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>
-                <a href="https://github.com/anabeatrizrod" target="_blank">GitHub</a> | 
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            </p>
-        </section>
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
 
-        <footer>
-            <p>Design moderno e responsivo</p>
-        </footer>
-    </div>
+header p {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
 
-</body>
-</html>
+section {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 0.5rem;
+}
+
+p, li {
+    color: var(--text-muted);
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #334155;
+}
+
+section ul li:last-child {
+    border-bottom: none;
+}
+
+/* Estilização dos links dos projetos e contato */
+section ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: color 0.2s;
+}
+
+section ul li a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+#contato a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+#contato a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
