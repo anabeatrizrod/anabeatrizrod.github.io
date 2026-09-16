@@ -76,6 +76,32 @@ section ul li:last-child {
     border-bottom: none;
 }
 
+/* Estilização dos links dos projetos e contato */
+section ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: color 0.2s;
+}
+
+section ul li a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+#contato a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+#contato a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
     color: var(--text-muted);
